@@ -3,9 +3,9 @@ gradle.projectsLoaded {
         buildscript {
             repositories {
 			maven{
-			//url "http://repo.jfrog.org/artifactory/gradle"
+			url "http://repo.jfrog.org/artifactory/gradle"
 			//url "http://localhost:8081/artifactory/gradle"
-			  url "http://localhost:8080/artifactory/gradle-snapshot-local"
+			//  url "http://localhost:8080/artifactory/gradle-snapshot-local"
 			}
 			//mavenLocal()
             dependencies {
