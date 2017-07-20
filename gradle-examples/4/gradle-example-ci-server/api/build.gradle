@@ -4,7 +4,7 @@ configurations {
 
 dependencies {
     compile project(':shared')
-    compile "commons-lang:commons-lang:2.4" {
+    compile "org.apache.commons:commons-lang3:3.6" {
         //dependency("commons-io:commons-io:1.2")
         artifact {
         name = "commons-io"
