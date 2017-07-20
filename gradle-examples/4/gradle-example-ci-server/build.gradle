@@ -16,7 +16,9 @@
 
 buildscript {
   repositories {
-    jcenter()
+    maven {
+        url "https://artifactory.global.standardchartered.com/artifactory/maven-release/"
+    }
   }
 }
 
