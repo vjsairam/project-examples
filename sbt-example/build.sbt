@@ -5,7 +5,7 @@ lazy val root = (project in file(".")).
     scalaVersion := "2.11.4"
   )
 
-  resolvers += "Artifactory" at "https://artifactory-test.global.standardchartered.com/artifactory/sbt-virtual/"
+  resolvers += "Artifactory" at "https://artifactory-test.global.standardchartered.com/artifactory/sbt-remote/"
 
   //publishTo := Some("Artifactory Realm" at "http://localhost:8081/artifactory/libs-snapshot-local")
 
