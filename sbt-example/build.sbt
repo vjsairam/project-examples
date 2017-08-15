@@ -7,9 +7,9 @@ lazy val root = (project in file(".")).
 
   resolvers += "Artifactory" at "https://artifactory-test.global.standardchartered.com/artifactory/sbt-remote/"
   
-  publishTo := Some("Artifactory Realm" at "https://artifactory-test.global.standardchartered.com/artifactory/sbt-remote;build.timestamp=" + new java.util.Date().getTime)
+  publishTo := Some("Artifactory Realm" at "https://artifactory-test.global.standardchartered.com/artifactory/sbt-local;build.timestamp=" + new java.util.Date().getTime)
   
-  publishTo := Some("Artifactory Realm" at "https://artifactory-test.global.standardchartered.com/artifactory/sbt-remote")
+  publishTo := Some("Artifactory Realm" at "https://artifactory-test.global.standardchartered.com/artifactory/sbt-local")
   //publishTo := Some("Artifactory Realm" at "http://localhost:8081/artifactory/libs-snapshot-local")
 
   //credentials += Credentials(new File("credentials.properties"))
