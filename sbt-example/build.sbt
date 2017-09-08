@@ -9,7 +9,8 @@ lazy val root = (project in file(".")).
   
   publishTo := Some("Artifactory Realm" at "https://artifactory-test.global.standardchartered.com/artifactory/sbt-local;build.timestamp=" + new java.util.Date().getTime)
   //publishTo := Some("Artifactory Realm" at "http://localhost:8081/artifactory/libs-snapshot-local")
-  credentials += Credentials("Artifactory Realm", "artifactory-test.global.standardchartered.com", "${env.USERNAME}", "{env.PASSWORD}")
+  //credentials += Credentials("Artifactory Realm", "artifactory-test.global.standardchartered.com", "${env.USERNAME}", "{env.PASSWORD}")
+credentials += Credentials("Artifactory Realm", "artifactory-test.global.standardchartered.com", "admin", "password")
  // credentials += Credentials(new File("credentials.properties"))
 //credentials ++= (for {
 ///  username <- Option(System.getenv().get("USERNAME"))
